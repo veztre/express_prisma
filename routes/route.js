@@ -7,7 +7,7 @@ var prisma = new PrismaClient
 router.get('/', async function(req, res, next) {
   var users = await prisma.users.findMany();
   res.render('userlist', {users: users});
-  
+  ``
   
 });
 // Insert user
